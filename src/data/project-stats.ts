@@ -13,5 +13,5 @@ export const projectStats: StatItem[] = [
   { id: "units", label: "عدد الوحدات", value: "8 تاون هاوس" },
   { id: "floors", label: "عدد الأدوار", value: "دوران لكل وحدة" },
   { id: "bedrooms", label: "عدد غرف النوم", value: "3 غرف نوم" },
-  { id: "bathrooms", label: "عدد دورات المياه", value: null },
+  { id: "bathrooms", label: "عدد دورات المياه", value: "4 دورات مياه" },
 ];
