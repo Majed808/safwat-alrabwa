@@ -17,9 +17,6 @@ export default function SitePhotosSection() {
         <h2 className="text-3xl md:text-5xl font-black text-charcoal">
           الواقع كما هو
         </h2>
-        <p className="text-charcoal/60 mt-4 max-w-xl mx-auto">
-          لقطات حقيقية من داخل الوحدات أثناء التنفيذ — بلا تجميل أو تعديل.
-        </p>
       </Reveal>
 
       {sitePhotoGroups.map((group, gi) => (
