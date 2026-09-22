@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { salesPhone, telLink } from "@/data/site-config";
 
 const footerLinks = [
   { href: "#home", label: "الرئيسية" },
@@ -15,7 +16,10 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 py-14 grid gap-10 md:grid-cols-3">
         <div>
           <h3 className="text-xl font-bold mb-1">صفوة الربوة</h3>
-          <p className="text-offwhite/70 text-sm">تاون هاوس — حي الربوة، الرياض</p>
+          <p className="text-offwhite/70 text-sm mb-2">تاون هاوس — حي الربوة، الرياض</p>
+          <a href={telLink} className="text-offwhite/80 text-sm hover:text-offwhite transition-colors" dir="ltr">
+            {salesPhone}
+          </a>
         </div>
 
         <nav className="flex flex-wrap gap-x-6 gap-y-3 md:justify-center content-start">
