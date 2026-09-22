@@ -9,3 +9,6 @@ export const telLink = `tel:${salesPhoneIntl}`;
 
 export const falLicense = "1100027393";
 export const advertisingLicense = "7201145494";
+
+export const tiktokHandle = "sakhr.r.e.d";
+export const tiktokLink = `https://www.tiktok.com/@${tiktokHandle}`;

@@ -88,7 +88,7 @@ export default function LocationSection() {
             ))}
           </div>
           <p className="text-xs text-charcoal/40 leading-relaxed">
-            زر &quot;الاتجاهات&quot; يفتح خرائط Google محسوبا من الموقع الفعلي للمشروع
+            زر &quot;الاتجاهات&quot; يفتح خرائط Google بمسار محسوب من موقع المشروع الفعلي،
             ليعرض لك المسافة والوقت الحقيقيين لحظة الضغط.
           </p>
         </div>

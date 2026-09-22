@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { salesPhone, telLink, falLicense, advertisingLicense } from "@/data/site-config";
+import { salesPhone, telLink, falLicense, advertisingLicense, tiktokLink, tiktokHandle } from "@/data/site-config";
 
 const footerLinks = [
   { href: "#home", label: "الرئيسية" },
@@ -17,8 +17,20 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-bold mb-1">صفوة الربوة</h3>
           <p className="text-offwhite/70 text-sm mb-2">تاون هاوس — حي الربوة، الرياض</p>
-          <a href={telLink} className="text-offwhite/80 text-sm hover:text-offwhite transition-colors" dir="ltr">
+          <a href={telLink} className="text-offwhite/80 text-sm hover:text-offwhite transition-colors block mb-3" dir="ltr">
             {salesPhone}
+          </a>
+          <a
+            href={tiktokLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`تيك توك @${tiktokHandle}`}
+            className="inline-flex items-center gap-2 text-offwhite/80 text-sm hover:text-offwhite transition-colors"
+          >
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path d="M16.5 2h-3.2v13.4a2.6 2.6 0 1 1-1.86-2.49v-3.28a5.85 5.85 0 1 0 5.06 5.79V9.03a7.02 7.02 0 0 0 4.1 1.31V7.16a3.7 3.7 0 0 1-2.4-1.03A3.68 3.68 0 0 1 16.5 2z" />
+            </svg>
+            <span dir="ltr">@{tiktokHandle}</span>
           </a>
         </div>
 
