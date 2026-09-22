@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const tajawal = Tajawal({
   subsets: ["arabic"],
@@ -93,6 +94,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <StickyMobileCTA />
+        <FloatingWhatsApp />
       </body>
     </html>
   );
