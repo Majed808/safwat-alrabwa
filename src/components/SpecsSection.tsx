@@ -19,7 +19,28 @@ export default function SpecsSection() {
           <h3 className="text-xl font-bold text-teal px-6 md:px-8 pt-6 md:pt-8 pb-4">
             المساحات
           </h3>
-          <div className="overflow-x-auto">
+          {/* جوال: بطاقات بدل جدول يحتاج تمرير جانبي */}
+          <div className="sm:hidden px-4 pb-4 flex flex-col gap-3">
+            {unitAreas.map((row) => (
+              <div key={row.model} className="rounded-xl bg-offwhite/60 border border-black/5 p-4">
+                <div className="flex items-baseline justify-between mb-1">
+                  <span className="font-bold text-charcoal">{row.model}</span>
+                  <span className="text-xs text-charcoal/60">{row.description}</span>
+                </div>
+                <div className="flex items-center justify-between text-sm pt-2 border-t border-black/5">
+                  <span className="text-charcoal/60">مساحة الصك</span>
+                  <span className="font-bold text-charcoal">{row.deedArea}</span>
+                </div>
+                <div className="flex items-center justify-between text-sm pt-1.5">
+                  <span className="text-charcoal/60">مجموع مسطح البناء</span>
+                  <span className="font-bold text-charcoal">{row.builtUpArea}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* سطح المكتب/التابلت: جدول كامل */}
+          <div className="hidden sm:block overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-t border-black/10 bg-offwhite/60">
