@@ -40,7 +40,14 @@ function buildEmailHtml(s: Submission) {
       ${row("رقم الجوال", s.phone)}
       ${s.email ? row("البريد الإلكتروني", s.email) : ""}
       ${s.message ? row("الرسالة / الاستفسار", s.message) : ""}
-      ${row("تاريخ الطلب", new Date(s.createdAt).toLocaleString("ar-SA", { dateStyle: "medium", timeStyle: "short" }))}
+      ${row(
+        "تاريخ الطلب",
+        new Date(s.createdAt).toLocaleString("ar-SA", {
+          dateStyle: "medium",
+          timeStyle: "short",
+          timeZone: "Asia/Riyadh",
+        }) + " (بتوقيت الرياض)"
+      )}
     </table>
     <p style="color:#8a8478;font-size:12px;margin-top:14px;">
       وصل هذا الطلب تلقائيا من نموذج "سجل اهتمامك" في موقع صفوة الربوة.
