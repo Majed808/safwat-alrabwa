@@ -9,9 +9,6 @@ export default function SpecsSection() {
         <h2 className="text-3xl md:text-5xl font-black text-charcoal">
           التفاصيل التي تصنع الفرق
         </h2>
-        <p className="text-charcoal/60 mt-4 max-w-xl mx-auto">
-          سيتم تحديث هذا القسم أولا بأول عند توفر مواصفات التنفيذ الرسمية.
-        </p>
       </Reveal>
 
       <Reveal className="mb-8">
