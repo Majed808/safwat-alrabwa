@@ -8,6 +8,7 @@ const navLinks = [
   { href: "#home", label: "الرئيسية" },
   { href: "#project", label: "المشروع" },
   { href: "#facades", label: "الواجهات" },
+  { href: "#floorplans", label: "المخطط" },
   { href: "#location", label: "الموقع" },
   { href: "#features", label: "المميزات" },
   { href: "#contact", label: "تواصل معنا" },
