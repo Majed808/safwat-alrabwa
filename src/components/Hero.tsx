@@ -17,6 +17,13 @@ export default function Hero() {
         <p className="text-offwhite/80 text-sm md:text-base tracking-[0.3em] uppercase">
           صخر الإنشاءات للتطوير العقاري
         </p>
+        <Image
+          src="/images/logo/safwat-mark.svg"
+          alt=""
+          width={56}
+          height={56}
+          className="w-12 h-12 md:w-14 md:h-14 brightness-0 invert opacity-90"
+        />
         <h1 className="text-offwhite font-black text-5xl sm:text-6xl md:text-8xl leading-tight">
           صفوة الربوة
         </h1>

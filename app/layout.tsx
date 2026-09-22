@@ -49,7 +49,8 @@ export const metadata: Metadata = {
     images: ["/images/facades/dark-night-full.jpg"],
   },
   icons: {
-    icon: "/images/logo/sakhr-logo.png",
+    icon: "/images/logo/safwat-mark.svg",
+    shortcut: "/images/logo/safwat-mark.svg",
   },
 };
 

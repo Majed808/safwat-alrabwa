@@ -15,7 +15,16 @@ export default function Footer() {
     <footer className="bg-teal-dark text-offwhite">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 py-14 grid gap-10 md:grid-cols-3">
         <div>
-          <h3 className="text-xl font-bold mb-1">صفوة الربوة</h3>
+          <div className="flex items-center gap-3 mb-1">
+            <Image
+              src="/images/logo/safwat-mark.svg"
+              alt=""
+              width={32}
+              height={32}
+              className="w-8 h-8 brightness-0 invert opacity-90"
+            />
+            <h3 className="text-xl font-bold">صفوة الربوة</h3>
+          </div>
           <p className="text-offwhite/70 text-sm mb-2">تاون هاوس — حي الربوة، الرياض</p>
           <a href={telLink} className="text-offwhite/80 text-sm hover:text-offwhite transition-colors block mb-3" dir="ltr">
             {salesPhone}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="شعار صفوة الربوة">
+  <path d="M42 172 V84 Q42 42 100 42 Q158 42 158 84 V172" fill="none" stroke="#0f4c46" stroke-width="9" stroke-linecap="round"/>
+  <g fill="#b6a374">
+    <path d="M93 62 L107 62 L100 76 Z"/>
+    <path d="M93 80 L107 80 L100 94 Z"/>
+    <path d="M93 98 L107 98 L100 112 Z"/>
+    <path d="M93 116 L107 116 L100 130 Z"/>
+    <path d="M93 134 L107 134 L100 148 Z"/>
+    <path d="M93 152 L107 152 L100 166 Z"/>
+  </g>
+  <path d="M26 172 H174" stroke="#0f4c46" stroke-width="9" stroke-linecap="round"/>
+</svg>
