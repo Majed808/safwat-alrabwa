@@ -27,7 +27,7 @@ export const partners: Partner[] = [
   { name: "جروهي", category: "التجهيزات الصحية", logo: "/images/partners/grohe.svg" },
   { name: "باناسونيك", category: "الأفياش الكهربائية", logo: "/images/partners/panasonic.svg" },
   { name: "أنفال", category: "مداخل السيارات", logo: "/images/partners/anfal.png" },
-  { name: "شركة الزامل", category: "المضخة سكالا2" },
+  { name: "شركة الزامل", category: "المضخة سكالا2", logo: "/images/partners/zamil.png" },
   { name: "الخزف السعودي", category: "السخانات", logo: "/images/partners/saudi-ceramics.png" },
   { name: "مصنع الوطن", category: "مكيفات", logo: "/images/partners/alwatan.jpeg" },
 ];
