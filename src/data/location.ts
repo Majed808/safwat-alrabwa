@@ -19,6 +19,7 @@ export type NearbyCategory =
   | "parks"
   | "restaurants"
   | "services"
+  | "fitness"
   | "roads";
 
 export type NearbyPlace = {
@@ -34,6 +35,7 @@ export const nearbyCategories: { id: NearbyCategory; label: string }[] = [
   { id: "parks", label: "الحدائق" },
   { id: "restaurants", label: "المطاعم والمقاهي" },
   { id: "services", label: "الخدمات اليومية" },
+  { id: "fitness", label: "النوادي الصحية" },
   { id: "roads", label: "الطرق الرئيسية" },
 ];
 
@@ -42,14 +44,19 @@ export const nearbyCategories: { id: NearbyCategory; label: string }[] = [
 // من موقع المشروع الفعلي.
 export const nearbyPlaces: NearbyPlace[] = [
   { id: "schools-1", name: "مدارس قريبة في حي الربوة وما جاوره", category: "schools" },
-  { id: "hospitals-1", name: "مستشفيات ومراكز طبية قريبة", category: "hospitals" },
+  { id: "hospitals-1", name: "مركز الدكتور سليمان الحبيب الطبي — حي الربوة", category: "hospitals" },
+  { id: "hospitals-2", name: "مستشفيات ومراكز طبية أخرى قريبة", category: "hospitals" },
   { id: "shopping-1", name: "العثيم مول الربوة", category: "shopping" },
   { id: "shopping-2", name: "ربوة بلازا", category: "shopping" },
   { id: "parks-1", name: "حدائق ومساحات خضراء قريبة", category: "parks" },
   { id: "restaurants-1", name: "مطاعم ومقاهي قريبة", category: "restaurants" },
   { id: "services-1", name: "خدمات يومية (صرافات، بقالات، صيدليات)", category: "services" },
-  { id: "roads-1", name: "طريق الملك فهد", category: "roads" },
-  { id: "roads-2", name: "الطريق الدائري الشرقي", category: "roads" },
+  { id: "fitness-1", name: "وقت اللياقة — فرع الربوة (رجال)", category: "fitness" },
+  { id: "fitness-2", name: "وقت اللياقة ليديز — فرع الربوة (سيدات)", category: "fitness" },
+  { id: "roads-1", name: "الطريق الدائري الشرقي", category: "roads" },
+  { id: "roads-2", name: "طريق مكة المكرمة", category: "roads" },
+  { id: "roads-3", name: "طريق النهضة", category: "roads" },
+  { id: "roads-4", name: "طريق صلاح الدين الأيوبي", category: "roads" },
 ];
 
 export function directionsUrl(placeName: string) {
