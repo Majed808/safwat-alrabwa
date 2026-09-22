@@ -41,7 +41,7 @@ export const floorPlanModels: FloorPlanModel[] = [
           "دورة مياه ضيوف",
           "مصلى",
           "درج ومصعد",
-          "كراج سيارتين",
+          "كراج سيارة",
         ],
         width: 1615,
         height: 1390,
