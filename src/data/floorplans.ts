@@ -18,6 +18,7 @@ export type FloorPlanModel = {
   id: string;
   title: string;
   subtitle: string;
+  price: string;
   floors: FloorPlanImage[];
 };
 
@@ -26,6 +27,7 @@ export const floorPlanModels: FloorPlanModel[] = [
     id: "model-a",
     title: "نموذج (أ)",
     subtitle: "الدور الأرضي مع الدور الأول",
+    price: "1,420,000",
     floors: [
       {
         src: "/images/floorplans/ground-floor.jpg",
@@ -64,6 +66,7 @@ export const floorPlanModels: FloorPlanModel[] = [
     id: "model-b",
     title: "نموذج (ب)",
     subtitle: "الدور الأول مع الدور الثاني (الملحق العلوي)",
+    price: "1,420,000",
     floors: [
       {
         src: "/images/floorplans/first-floor.jpg",

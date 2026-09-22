@@ -25,9 +25,22 @@ export default function FloorPlansSection() {
 
         {floorPlanModels.map((model, mi) => (
           <Reveal key={model.id} delay={mi * 100} className="mb-20 last:mb-0">
-            <div className="mb-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-charcoal">{model.title}</h3>
-              <p className="text-charcoal/55 mt-1">{model.subtitle}</p>
+            <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-charcoal">{model.title}</h3>
+                <p className="text-charcoal/55 mt-1">{model.subtitle}</p>
+              </div>
+              <div className="inline-flex items-center gap-2 rounded-full bg-teal text-offwhite px-5 py-2.5">
+                <span className="text-xs text-offwhite/75">سعر البيع</span>
+                <span className="text-lg font-black">{model.price}</span>
+                <Image
+                  src="/images/icons/sar-symbol.svg"
+                  alt="ريال سعودي"
+                  width={18}
+                  height={20}
+                  className="h-[18px] w-auto brightness-0 invert"
+                />
+              </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
