@@ -20,7 +20,7 @@ export const partners: Partner[] = [
   { name: "الراجحي للحديد", category: "الحديد", logo: "/images/partners/al-rajhi-steel.webp" },
   { name: "كيابل الرياض", category: "الكيابل", logo: "/images/partners/riyadh-cables.svg" },
   { name: "الفنار", category: "القواطع الكهربائية", logo: "/images/partners/alfanar.svg" },
-  { name: "شركة تحويل", category: "المواسير الحرارية" },
+  { name: "شركة تحويل", category: "المواسير الحرارية", logo: "/images/partners/tahweel.webp" },
   { name: "كي باب", category: "الأبواب", logo: "/images/partners/keybab.png" },
   { name: "العامر", category: "النوافذ", logo: "/images/partners/al-amer.jpg" },
   { name: "جوتن", category: "الدهانات", logo: "/images/partners/jotun.svg" },
