@@ -15,8 +15,6 @@ export type SpecGroup = {
   items: SpecItem[];
 };
 
-const PLACEHOLDER = "[سيتم إضافة المواصفة]";
-
 export const projectSpecs: SpecGroup[] = [
   {
     id: "construction",
@@ -42,8 +40,6 @@ export const projectSpecs: SpecGroup[] = [
       { label: "التجهيزات الكهربائية", value: "أفياش باناسونيك (ضمان مدى الحياة)" },
       { label: "مدخل السيارة", value: "شركة أنفال (ضمان سنتين)" },
       { label: "التجهيزات الصحية", value: "خلاطات مدفونة من شركة جروهي" },
-      { label: "المطابخ", value: PLACEHOLDER },
-      { label: "أنظمة أخرى", value: PLACEHOLDER },
     ],
   },
 ];
