@@ -18,7 +18,7 @@ export default function StatsSection() {
 
   return (
     <section className="mx-auto max-w-6xl px-4 sm:px-6 py-24">
-      <Reveal className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
+      <Reveal className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
         {confirmed.map((s) => (
           <div key={s.id}>
             <p className="text-3xl md:text-4xl font-black text-teal">{s.value}</p>

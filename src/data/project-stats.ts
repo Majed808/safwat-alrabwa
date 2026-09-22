@@ -14,4 +14,6 @@ export const projectStats: StatItem[] = [
   { id: "floors", label: "عدد الأدوار", value: "دوران لكل وحدة" },
   { id: "bedrooms", label: "عدد غرف النوم", value: "3 غرف نوم" },
   { id: "bathrooms", label: "عدد دورات المياه", value: "4 دورات مياه" },
+  { id: "maid-room", label: "غرفة خادمة", value: "غرفة خادمة" },
+  { id: "laundry-room", label: "غرفة غسيل ملابس", value: "غرفة غسيل ملابس" },
 ];
