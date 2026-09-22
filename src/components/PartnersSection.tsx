@@ -7,7 +7,6 @@ export default function PartnersSection() {
     <section className="bg-beige-light/40 py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal className="text-center mb-14">
-          <p className="text-beige text-sm tracking-[0.3em] uppercase mb-3">شعارات</p>
           <h2 className="text-3xl md:text-5xl font-black text-charcoal mb-4">
             شركاء النجاح
           </h2>
@@ -21,15 +20,15 @@ export default function PartnersSection() {
             p.logo ? (
               <div
                 key={p.name}
-                className="group rounded-2xl bg-white border border-black/10 px-4 py-6 flex flex-col items-center justify-center text-center gap-2.5 transition-colors hover:border-teal/40"
+                className="group rounded-2xl bg-white border border-black/10 px-5 py-7 flex flex-col items-center justify-center text-center gap-3 transition-colors hover:border-teal/40"
               >
-                <div className="h-11 w-full flex items-center justify-center">
+                <div className="h-16 w-full flex items-center justify-center">
                   <Image
                     src={p.logo}
                     alt={p.name}
-                    width={160}
-                    height={44}
-                    className="h-11 w-auto max-w-[140px] object-contain"
+                    width={200}
+                    height={64}
+                    className="max-h-16 w-auto max-w-[85%] object-contain"
                   />
                 </div>
                 <span className="text-[11px] text-charcoal/45">
