@@ -12,9 +12,6 @@ export default function FacadeGallery() {
     <section id="facades" className="bg-charcoal text-offwhite py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <Reveal className="text-center mb-14">
-          <p className="text-beige text-sm tracking-[0.3em] uppercase mb-3">
-            من ملف تصميم الواجهات
-          </p>
           <h2 className="text-3xl md:text-5xl font-black">معرض الواجهات</h2>
         </Reveal>
 
