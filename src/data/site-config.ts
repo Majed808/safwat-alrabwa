@@ -6,3 +6,6 @@ export const salesPhone = "0531008970";
 export const salesPhoneIntl = "+966531008970";
 export const whatsappLink = `https://wa.me/966531008970`;
 export const telLink = `tel:${salesPhoneIntl}`;
+
+export const falLicense = "1100027393";
+export const advertisingLicense = "7201145494";

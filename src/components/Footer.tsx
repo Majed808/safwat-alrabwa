@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { salesPhone, telLink } from "@/data/site-config";
+import { salesPhone, telLink, falLicense, advertisingLicense } from "@/data/site-config";
 
 const footerLinks = [
   { href: "#home", label: "الرئيسية" },
@@ -47,8 +47,12 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-offwhite/10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-5 text-xs text-offwhite/50 text-center">
-          © {new Date().getFullYear()} صخر الإنشاءات للتطوير العقاري — جميع الحقوق محفوظة
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-xs text-offwhite/50 text-center">
+          <span>© {new Date().getFullYear()} صخر الإنشاءات للتطوير العقاري — جميع الحقوق محفوظة</span>
+          <span className="hidden sm:inline text-offwhite/30">|</span>
+          <span>رخصة فال: {falLicense}</span>
+          <span className="hidden sm:inline text-offwhite/30">|</span>
+          <span>ترخيص إعلاني: {advertisingLicense}</span>
         </div>
       </div>
     </footer>
