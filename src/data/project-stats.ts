@@ -11,8 +11,7 @@ export type StatItem = {
 
 export const projectStats: StatItem[] = [
   { id: "units", label: "عدد الوحدات", value: "8 تاون هاوس" },
-  { id: "area", label: "مساحة الوحدة", value: null },
-  { id: "floors", label: "عدد الأدوار", value: null },
-  { id: "bedrooms", label: "عدد غرف النوم", value: null },
+  { id: "floors", label: "عدد الأدوار", value: "دوران لكل وحدة" },
+  { id: "bedrooms", label: "عدد غرف النوم", value: "3 غرف نوم" },
   { id: "bathrooms", label: "عدد دورات المياه", value: null },
 ];
