@@ -19,13 +19,25 @@ export default function Header() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-offwhite/90 backdrop-blur-md border-b border-black/5">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 h-16 md:h-20 flex items-center justify-between">
-        <Link href="#home" className="flex items-center gap-3 shrink-0">
+        <Link href="#home" className="flex items-center gap-2.5 md:gap-3 shrink-0">
+          <Image
+            src="/images/logo/safwat-mark.svg"
+            alt=""
+            width={36}
+            height={36}
+            className="h-7 w-7 md:h-9 md:w-9"
+            priority
+          />
+          <span className="hidden sm:inline text-base md:text-lg font-bold text-charcoal">
+            صفوة الربوة
+          </span>
+          <span className="hidden sm:inline w-px h-6 bg-black/10 mx-1" />
           <Image
             src="/images/logo/sakhr-logo.png"
             alt="شعار صخر الإنشاءات للتطوير العقاري"
             width={140}
             height={48}
-            className="h-9 md:h-11 w-auto"
+            className="h-8 md:h-10 w-auto"
             priority
           />
         </Link>
