@@ -15,17 +15,30 @@ export type SpecGroup = {
   items: SpecItem[];
 };
 
-export const projectSpecs: SpecGroup[] = [
+export type UnitAreaRow = {
+  model: string;
+  description: string;
+  deedArea: string;
+  builtUpArea: string;
+};
+
+// جدول مساحات النماذج — صف واحد لكل نموذج بدل تكرار وصفه مرتين.
+export const unitAreas: UnitAreaRow[] = [
   {
-    id: "areas",
-    title: "المساحات",
-    items: [
-      { label: "نموذج (أ) — الدور الأرضي مع الدور الأول — مساحة الصك", value: "169.57 م²" },
-      { label: "نموذج (أ) — الدور الأرضي مع الدور الأول — مجموع مسطح البناء", value: "276 م²" },
-      { label: "نموذج (ب) — الدور الأول مع الدور الثاني — مساحة الصك", value: "106.96 م²" },
-      { label: "نموذج (ب) — الدور الأول مع الدور الثاني — مجموع مسطح البناء", value: "256 م²" },
-    ],
+    model: "نموذج (أ)",
+    description: "الدور الأرضي مع الدور الأول",
+    deedArea: "169.57 م²",
+    builtUpArea: "276 م²",
   },
+  {
+    model: "نموذج (ب)",
+    description: "الدور الأول مع الدور الثاني",
+    deedArea: "106.96 م²",
+    builtUpArea: "256 م²",
+  },
+];
+
+export const projectSpecs: SpecGroup[] = [
   {
     id: "unit-features",
     title: "مميزات الوحدة السكنية",

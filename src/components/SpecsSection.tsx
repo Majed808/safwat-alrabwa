@@ -1,4 +1,4 @@
-import { projectSpecs } from "@/data/project-specs";
+import { projectSpecs, unitAreas } from "@/data/project-specs";
 import Reveal from "./Reveal";
 
 export default function SpecsSection() {
@@ -12,6 +12,44 @@ export default function SpecsSection() {
         <p className="text-charcoal/60 mt-4 max-w-xl mx-auto">
           سيتم تحديث هذا القسم أولا بأول عند توفر مواصفات التنفيذ الرسمية.
         </p>
+      </Reveal>
+
+      <Reveal className="mb-8">
+        <div className="rounded-2xl border border-black/10 overflow-hidden">
+          <h3 className="text-xl font-bold text-teal px-6 md:px-8 pt-6 md:pt-8 pb-4">
+            المساحات
+          </h3>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-t border-black/10 bg-offwhite/60">
+                  <th className="text-right font-bold text-charcoal/70 px-6 md:px-8 py-3">النموذج</th>
+                  <th className="text-right font-bold text-charcoal/70 px-4 py-3">الوصف</th>
+                  <th className="text-left font-bold text-charcoal/70 px-4 py-3">مساحة الصك</th>
+                  <th className="text-left font-bold text-charcoal/70 px-6 md:px-8 py-3">مجموع مسطح البناء</th>
+                </tr>
+              </thead>
+              <tbody>
+                {unitAreas.map((row) => (
+                  <tr key={row.model} className="border-t border-black/5">
+                    <td className="px-6 md:px-8 py-3.5 font-bold text-charcoal whitespace-nowrap">
+                      {row.model}
+                    </td>
+                    <td className="px-4 py-3.5 text-charcoal/70 whitespace-nowrap">
+                      {row.description}
+                    </td>
+                    <td className="px-4 py-3.5 text-left font-bold text-charcoal whitespace-nowrap">
+                      {row.deedArea}
+                    </td>
+                    <td className="px-6 md:px-8 py-3.5 text-left font-bold text-charcoal whitespace-nowrap">
+                      {row.builtUpArea}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
       </Reveal>
 
       <div className="grid md:grid-cols-2 gap-8">
