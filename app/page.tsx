@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import ProjectIntro from "@/components/ProjectIntro";
 import FacadeGallery from "@/components/FacadeGallery";
+import SitePhotosSection from "@/components/SitePhotosSection";
 import LocationSection from "@/components/LocationSection";
 import SpecsSection from "@/components/SpecsSection";
 import PartnersSection from "@/components/PartnersSection";
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <ProjectIntro />
       <FacadeGallery />
+      <SitePhotosSection />
       <LocationSection />
       <ReadyFeatures />
       <SpecsSection />
