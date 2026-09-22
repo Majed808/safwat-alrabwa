@@ -22,7 +22,6 @@ export default function StatsSection() {
         {confirmed.map((s) => (
           <div key={s.id}>
             <p className="text-3xl md:text-4xl font-black text-teal">{s.value}</p>
-            <p className="text-sm text-charcoal/60 mt-1">{s.label}</p>
           </div>
         ))}
       </Reveal>
