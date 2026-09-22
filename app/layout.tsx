@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Tajawal } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
 
 const tajawal = Tajawal({
   subsets: ["arabic"],
@@ -50,9 +51,26 @@ export const metadata: Metadata = {
     images: ["/images/facades/dark-night-full.jpg"],
   },
   icons: {
-    icon: "/images/logo/safwat-mark.svg",
+    icon: [
+      { url: "/images/logo/safwat-mark.svg", type: "image/svg+xml" },
+      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icons/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
     shortcut: "/images/logo/safwat-mark.svg",
+    apple: "/icons/apple-touch-icon.png",
   },
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "صفوة الربوة",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0f4c46",
 };
 
 export default function RootLayout({
@@ -95,6 +113,7 @@ export default function RootLayout({
         <Footer />
         <StickyMobileCTA />
         <FloatingWhatsApp />
+        <ServiceWorkerRegister />
       </body>
     </html>
   );

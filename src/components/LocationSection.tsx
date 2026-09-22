@@ -80,7 +80,7 @@ export default function LocationSection() {
                   href={directionsUrl(place.name)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs font-bold text-teal shrink-0 border border-teal/30 rounded-full px-3 py-1.5 hover:bg-teal hover:text-offwhite transition-colors"
+                  className="text-xs font-bold text-teal shrink-0 border border-teal/30 rounded-full px-3.5 py-2.5 hover:bg-teal hover:text-offwhite transition-colors"
                 >
                   الاتجاهات
                 </a>
