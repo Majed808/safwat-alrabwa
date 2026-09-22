@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { partners } from "@/data/partners";
 import Reveal from "./Reveal";
 
@@ -16,17 +17,37 @@ export default function PartnersSection() {
         </Reveal>
 
         <Reveal className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-          {partners.map((p) => (
-            <div
-              key={p.name}
-              className="group rounded-2xl bg-offwhite border border-black/10 px-4 py-6 flex flex-col items-center justify-center text-center gap-1.5 transition-colors hover:border-teal/40"
-            >
-              <span className="text-lg font-black text-teal tracking-tight">
-                {p.name}
-              </span>
-              <span className="text-[11px] text-charcoal/45">{p.category}</span>
-            </div>
-          ))}
+          {partners.map((p) =>
+            p.logo ? (
+              <div
+                key={p.name}
+                className="group rounded-2xl bg-white border border-black/10 px-4 py-6 flex flex-col items-center justify-center text-center gap-2.5 transition-colors hover:border-teal/40"
+              >
+                <div className="h-11 w-full flex items-center justify-center">
+                  <Image
+                    src={p.logo}
+                    alt={p.name}
+                    width={160}
+                    height={44}
+                    className="h-11 w-auto max-w-[140px] object-contain"
+                  />
+                </div>
+                <span className="text-[11px] text-charcoal/45">
+                  {p.name} · {p.category}
+                </span>
+              </div>
+            ) : (
+              <div
+                key={p.name}
+                className="group rounded-2xl bg-offwhite border border-black/10 px-4 py-6 flex flex-col items-center justify-center text-center gap-1.5 transition-colors hover:border-teal/40"
+              >
+                <span className="text-lg font-black text-teal tracking-tight">
+                  {p.name}
+                </span>
+                <span className="text-[11px] text-charcoal/45">{p.category}</span>
+              </div>
+            )
+          )}
         </Reveal>
       </div>
     </section>
