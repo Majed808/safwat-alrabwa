@@ -42,7 +42,7 @@ export default function Hero() {
             href="#contact"
             className="inline-flex items-center justify-center rounded-full border border-offwhite/60 text-offwhite font-bold px-8 py-4 text-base hover:bg-offwhite/10 transition-colors"
           >
-            احجز اهتمامك
+            سجل اهتمامك
           </a>
         </div>
       </div>
