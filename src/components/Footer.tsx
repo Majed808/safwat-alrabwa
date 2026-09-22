@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { salesPhone, telLink, falLicense, advertisingLicense, tiktokLink, tiktokHandle } from "@/data/site-config";
+import { salesPhone, telLink, falLicense, advertisingLicense, tiktokLink, tiktokHandle, salesEmail, mailtoLink } from "@/data/site-config";
 
 const footerLinks = [
   { href: "#home", label: "الرئيسية" },
@@ -69,6 +69,27 @@ export default function Footer() {
                 />
               </svg>
               <span dir="ltr">{salesPhone}</span>
+            </a>
+            <a
+              href={mailtoLink}
+              className="inline-flex items-center justify-center sm:justify-start gap-2.5 text-sm text-offwhite/85 hover:text-offwhite transition-colors"
+            >
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" aria-hidden="true" className="shrink-0">
+                <path
+                  d="M3.5 5.5h13a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1z"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M3 6.5l7 5.5 7-5.5"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <span dir="ltr">{salesEmail}</span>
             </a>
             <a
               href={tiktokLink}

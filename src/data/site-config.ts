@@ -12,3 +12,6 @@ export const advertisingLicense = "7201145494";
 
 export const tiktokHandle = "sakhr.r.e.d";
 export const tiktokLink = `https://www.tiktok.com/@${tiktokHandle}`;
+
+export const salesEmail = "sakhr.r.e.d@gmail.com";
+export const mailtoLink = `mailto:${salesEmail}`;
