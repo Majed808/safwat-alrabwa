@@ -88,7 +88,6 @@ export const floorPlanModels: FloorPlanModel[] = [
         floorLabel: "الدور الثاني (الملحق العلوي)",
         rooms: [
           "غرفة رئيسية (ماستر) + حمام",
-          "غرفة نوم + حمام",
           "غرفة خادمة + حمام",
           "درج ومصعد",
           "أسطح",
